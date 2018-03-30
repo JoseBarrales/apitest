@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "20e4cf58df9f8d3b89e2a347e3b3b35d8691f424"
+    "signature": "e6b637b868df5f96a125bc09566ca99c5400fc13"
   },
   "compilationOptions": {
     "defines": [
@@ -24,9 +24,8 @@
       "ApiTest/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.0.0",
-          "Microsoft.Extensions.Primitives": "2.0.0",
+          "Microsoft.Extensions.Primitives": "2.1.0-preview1-final",
           "Microsoft.NETCore.App": "2.0.0",
-          "ServiceStack": "3.9.71",
           "ServiceStack.Redis.Core": "5.0.2"
         },
         "runtime": {
@@ -282,7 +281,7 @@
           "Microsoft.Extensions.ObjectPool": "2.0.0",
           "Microsoft.Extensions.Options": "2.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "2.0.0",
-          "Microsoft.Extensions.Primitives": "2.0.0",
+          "Microsoft.Extensions.Primitives": "2.1.0-preview1-final",
           "Microsoft.Extensions.WebEncoders": "2.0.0",
           "Microsoft.Net.Http.Headers": "2.0.0",
           "Microsoft.VisualStudio.Web.BrowserLink": "2.0.0"
@@ -743,7 +742,7 @@
       },
       "Microsoft.AspNetCore.Http.Features/2.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "2.0.0"
+          "Microsoft.Extensions.Primitives": "2.1.0-preview1-final"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {}
@@ -1022,7 +1021,7 @@
           "Microsoft.AspNetCore.Routing.Abstractions": "2.0.0",
           "Microsoft.Extensions.Caching.Memory": "2.0.0",
           "Microsoft.Extensions.FileSystemGlobbing": "2.0.0",
-          "Microsoft.Extensions.Primitives": "2.0.0"
+          "Microsoft.Extensions.Primitives": "2.1.0-preview1-final"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.TagHelpers.dll": {}
@@ -1118,7 +1117,7 @@
       },
       "Microsoft.AspNetCore.ResponseCaching.Abstractions/2.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "2.0.0"
+          "Microsoft.Extensions.Primitives": "2.1.0-preview1-final"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll": {}
@@ -1664,7 +1663,7 @@
       },
       "Microsoft.Extensions.Caching.Abstractions/2.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "2.0.0"
+          "Microsoft.Extensions.Primitives": "2.1.0-preview1-final"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll": {}
@@ -1725,7 +1724,7 @@
       },
       "Microsoft.Extensions.Configuration.Abstractions/2.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "2.0.0"
+          "Microsoft.Extensions.Primitives": "2.1.0-preview1-final"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
@@ -1889,7 +1888,7 @@
       },
       "Microsoft.Extensions.FileProviders.Abstractions/2.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "2.0.0"
+          "Microsoft.Extensions.Primitives": "2.1.0-preview1-final"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
@@ -2103,7 +2102,7 @@
       "Microsoft.Extensions.Options/2.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0",
-          "Microsoft.Extensions.Primitives": "2.0.0"
+          "Microsoft.Extensions.Primitives": "2.1.0-preview1-final"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {}
@@ -2138,9 +2137,9 @@
           "lib/netstandard1.3/Microsoft.Extensions.PlatformAbstractions.dll": {}
         }
       },
-      "Microsoft.Extensions.Primitives/2.0.0": {
+      "Microsoft.Extensions.Primitives/2.1.0-preview1-final": {
         "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "4.4.0"
+          "System.Runtime.CompilerServices.Unsafe": "4.5.0-preview1-26216-02"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
@@ -2243,7 +2242,7 @@
       },
       "Microsoft.Net.Http.Headers/2.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "2.0.0",
+          "Microsoft.Extensions.Primitives": "2.1.0-preview1-final",
           "System.Buffers": "4.4.0"
         },
         "runtime": {
@@ -2551,29 +2550,9 @@
           }
         }
       },
-      "ServiceStack/3.9.71": {
-        "dependencies": {
-          "ServiceStack.Common": "3.0.6",
-          "ServiceStack.OrmLite.SqlServer": "3.0.3",
-          "ServiceStack.Redis": "3.0.0"
-        },
-        "runtime": {
-          "lib/net35/ServiceStack.ServiceInterface.dll": {},
-          "lib/net35/ServiceStack.dll": {}
-        },
-        "compile": {
-          "lib/net35/ServiceStack.ServiceInterface.dll": {},
-          "lib/net35/ServiceStack.dll": {}
-        }
-      },
-      "ServiceStack.Common/3.0.6": {
-        "dependencies": {
-          "ServiceStack.Text": "2.9.0"
-        }
-      },
       "ServiceStack.Common.Core/5.0.2": {
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "2.0.0",
+          "Microsoft.Extensions.Primitives": "2.1.0-preview1-final",
           "ServiceStack.Interfaces.Core": "5.0.2",
           "ServiceStack.Text.Core": "5.0.2",
           "System.ComponentModel.Primitives": "4.3.0",
@@ -2603,17 +2582,6 @@
           "lib/netstandard2.0/ServiceStack.Interfaces.dll": {}
         }
       },
-      "ServiceStack.OrmLite.SqlServer/3.0.3": {
-        "runtime": {
-          "lib/ServiceStack.OrmLite.SqlServer.dll": {},
-          "lib/ServiceStack.OrmLite.dll": {}
-        },
-        "compile": {
-          "lib/ServiceStack.OrmLite.SqlServer.dll": {},
-          "lib/ServiceStack.OrmLite.dll": {}
-        }
-      },
-      "ServiceStack.Redis/3.0.0": {},
       "ServiceStack.Redis.Core/5.0.2": {
         "dependencies": {
           "ServiceStack.Common.Core": "5.0.2",
@@ -2631,11 +2599,10 @@
           "lib/netstandard2.0/ServiceStack.Redis.dll": {}
         }
       },
-      "ServiceStack.Text/2.9.0": {},
       "ServiceStack.Text.Core/5.0.2": {
         "dependencies": {
           "Microsoft.CSharp": "4.4.0",
-          "Microsoft.Extensions.Primitives": "2.0.0",
+          "Microsoft.Extensions.Primitives": "2.1.0-preview1-final",
           "System.Runtime": "4.3.0"
         },
         "runtime": {
@@ -3383,7 +3350,7 @@
           "Microsoft.NETCore.Targets": "1.1.0"
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.4.0": {
+      "System.Runtime.CompilerServices.Unsafe/4.5.0-preview1-26216-02": {
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         },
@@ -5323,13 +5290,12 @@
       "hashPath": "microsoft.extensions.platformabstractions.1.1.0.nupkg.sha512",
       "runtimeStoreManifestName": "aspnetcore-store-2.0.0-linux-x64.xml;aspnetcore-store-2.0.0-osx-x64.xml;aspnetcore-store-2.0.0-win7-x64.xml;aspnetcore-store-2.0.0-win7-x86.xml"
     },
-    "Microsoft.Extensions.Primitives/2.0.0": {
+    "Microsoft.Extensions.Primitives/2.1.0-preview1-final": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ukg53qNlqTrK38WA30b5qhw0GD7y3jdI9PHHASjdKyTcBHTevFM2o23tyk3pWCgAV27Bbkm+CPQ2zUe1ZOuYSA==",
-      "path": "microsoft.extensions.primitives/2.0.0",
-      "hashPath": "microsoft.extensions.primitives.2.0.0.nupkg.sha512",
-      "runtimeStoreManifestName": "aspnetcore-store-2.0.0-linux-x64.xml;aspnetcore-store-2.0.0-osx-x64.xml;aspnetcore-store-2.0.0-win7-x64.xml;aspnetcore-store-2.0.0-win7-x86.xml"
+      "sha512": "sha512-RbZvvDkV9jJBJ4V+XEW2RWLFemmDmrFWERGYh15j8oUjqDLMEtxR1p9a4cnAUe203WO+UjmF0Vxddxn990Rm3A==",
+      "path": "microsoft.extensions.primitives/2.1.0-preview1-final",
+      "hashPath": "microsoft.extensions.primitives.2.1.0-preview1-final.nupkg.sha512"
     },
     "Microsoft.Extensions.WebEncoders/2.0.0": {
       "type": "package",
@@ -5606,20 +5572,6 @@
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
       "runtimeStoreManifestName": "aspnetcore-store-2.0.0-win7-x86.xml"
     },
-    "ServiceStack/3.9.71": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-G6shF+9Wc8yO32vpiLCXP9zl0F2d4pDxaNmtFl4QpQMUSPdD589DRWQm9xfg/k4g2K9ANjOAAecZcAFi9SsDNQ==",
-      "path": "servicestack/3.9.71",
-      "hashPath": "servicestack.3.9.71.nupkg.sha512"
-    },
-    "ServiceStack.Common/3.0.6": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-BE06hInBMo4Rt68FdSvZKJjAIJJqa9VtbNFp6yi/7kM9BE0OjuWvwMwYYnTNbFUKN8ENwPOyU3dKIbxJcvTB6g==",
-      "path": "servicestack.common/3.0.6",
-      "hashPath": "servicestack.common.3.0.6.nupkg.sha512"
-    },
     "ServiceStack.Common.Core/5.0.2": {
       "type": "package",
       "serviceable": true,
@@ -5634,33 +5586,12 @@
       "path": "servicestack.interfaces.core/5.0.2",
       "hashPath": "servicestack.interfaces.core.5.0.2.nupkg.sha512"
     },
-    "ServiceStack.OrmLite.SqlServer/3.0.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-CriNtl7pXs7YOJlZ08pBfS+LD7BDHW8DUbJLen8JM9HP3ThUMx29VfUVhdiikExErhF8BNkLBP5a30MgVveogQ==",
-      "path": "servicestack.ormlite.sqlserver/3.0.3",
-      "hashPath": "servicestack.ormlite.sqlserver.3.0.3.nupkg.sha512"
-    },
-    "ServiceStack.Redis/3.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-z9H9ExLlnM58SwcbtulYjunjXQUZf7MVzysrBDaPkW9kGl9JfeMqG23CHKS3NA+fUnY6ztBFytMXAGWHnbeqvQ==",
-      "path": "servicestack.redis/3.0.0",
-      "hashPath": "servicestack.redis.3.0.0.nupkg.sha512"
-    },
     "ServiceStack.Redis.Core/5.0.2": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-CchiQVXOKe1hktFw9hUKednPb6oaFUzHIsv3GcrTzNBGSYViLKQsknCLfnbqeU1lhtT8aFQTcISXzD04SA9e6A==",
       "path": "servicestack.redis.core/5.0.2",
       "hashPath": "servicestack.redis.core.5.0.2.nupkg.sha512"
-    },
-    "ServiceStack.Text/2.9.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Y2IaeTWQ4RHfwGIy8Qm5NJDHorwVJ9VlutC/QGr6i9aD9HqhYZegcc0BbPap/YvwL1X0GaIEzIwBi2bkIj0xig==",
-      "path": "servicestack.text/2.9.0",
-      "hashPath": "servicestack.text.2.9.0.nupkg.sha512"
     },
     "ServiceStack.Text.Core/5.0.2": {
       "type": "package",
@@ -6099,13 +6030,12 @@
       "path": "system.runtime/4.3.0",
       "hashPath": "system.runtime.4.3.0.nupkg.sha512"
     },
-    "System.Runtime.CompilerServices.Unsafe/4.4.0": {
+    "System.Runtime.CompilerServices.Unsafe/4.5.0-preview1-26216-02": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Dy57zHQKywGBeR7jo+dd+PAljHIfAlZIappgOLM//6ygTl8ql3IdCUbyPlMhrZ2v+2Bsy3n1amGSTlOKSWddFw==",
-      "path": "system.runtime.compilerservices.unsafe/4.4.0",
-      "hashPath": "system.runtime.compilerservices.unsafe.4.4.0.nupkg.sha512",
-      "runtimeStoreManifestName": "aspnetcore-store-2.0.0-linux-x64.xml;aspnetcore-store-2.0.0-osx-x64.xml;aspnetcore-store-2.0.0-win7-x64.xml;aspnetcore-store-2.0.0-win7-x86.xml"
+      "sha512": "sha512-YH6QzLUg6VzyejRsW9no/xlulcpKjfOC27jWmijyhw8A42ldukXHQDSaE0CP+khK0m2iqAaXoQ0BU49FUDw7Lw==",
+      "path": "system.runtime.compilerservices.unsafe/4.5.0-preview1-26216-02",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.5.0-preview1-26216-02.nupkg.sha512"
     },
     "System.Runtime.Extensions/4.3.0": {
       "type": "package",
