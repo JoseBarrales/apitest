@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "e6b637b868df5f96a125bc09566ca99c5400fc13"
+    "signature": "120ca75e19618fee93507d5334d848ddf415ee3e"
   },
   "compilationOptions": {
     "defines": [
@@ -26,7 +26,7 @@
           "Microsoft.AspNetCore.All": "2.0.0",
           "Microsoft.Extensions.Primitives": "2.1.0-preview1-final",
           "Microsoft.NETCore.App": "2.0.0",
-          "ServiceStack.Redis.Core": "5.0.2"
+          "ServiceStack": "3.9.71"
         },
         "runtime": {
           "ApiTest.dll": {}
@@ -2550,68 +2550,55 @@
           }
         }
       },
-      "ServiceStack.Common.Core/5.0.2": {
+      "ServiceStack/3.9.71": {
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "2.1.0-preview1-final",
-          "ServiceStack.Interfaces.Core": "5.0.2",
-          "ServiceStack.Text.Core": "5.0.2",
-          "System.ComponentModel.Primitives": "4.3.0",
-          "System.Data.Common": "4.3.0",
-          "System.Dynamic.Runtime": "4.3.0",
-          "System.Net.NetworkInformation": "4.3.0",
-          "System.Net.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
-          "System.Runtime.Serialization.Primitives": "4.3.0"
+          "ServiceStack.Common": "3.0.6",
+          "ServiceStack.OrmLite.SqlServer": "3.0.3",
+          "ServiceStack.Redis": "3.0.0"
         },
         "runtime": {
-          "lib/netstandard2.0/ServiceStack.Common.dll": {}
+          "lib/net35/ServiceStack.ServiceInterface.dll": {},
+          "lib/net35/ServiceStack.dll": {}
         },
         "compile": {
-          "lib/netstandard2.0/ServiceStack.Common.dll": {}
+          "lib/net35/ServiceStack.ServiceInterface.dll": {},
+          "lib/net35/ServiceStack.dll": {}
         }
       },
-      "ServiceStack.Interfaces.Core/5.0.2": {
+      "ServiceStack.Common/3.0.6": {
         "dependencies": {
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Serialization.Primitives": "4.3.0"
+          "ServiceStack.Text": "2.9.0"
         },
         "runtime": {
-          "lib/netstandard2.0/ServiceStack.Interfaces.dll": {}
+          "lib/ServiceStack.Common.dll": {},
+          "lib/ServiceStack.Interfaces.dll": {}
         },
         "compile": {
-          "lib/netstandard2.0/ServiceStack.Interfaces.dll": {}
+          "lib/ServiceStack.Common.dll": {},
+          "lib/ServiceStack.Interfaces.dll": {}
         }
       },
-      "ServiceStack.Redis.Core/5.0.2": {
-        "dependencies": {
-          "ServiceStack.Common.Core": "5.0.2",
-          "System.Collections.NonGeneric": "4.3.0",
-          "System.Collections.Specialized": "4.3.0",
-          "System.Data.Common": "4.3.0",
-          "System.Net.NameResolution": "4.3.0",
-          "System.Net.Security": "4.3.1",
-          "System.Threading.Thread": "4.3.0"
-        },
+      "ServiceStack.OrmLite.SqlServer/3.0.3": {
         "runtime": {
-          "lib/netstandard2.0/ServiceStack.Redis.dll": {}
+          "lib/ServiceStack.OrmLite.SqlServer.dll": {},
+          "lib/ServiceStack.OrmLite.dll": {},
+          "lib/ServiceStack.Text.dll": {}
         },
         "compile": {
-          "lib/netstandard2.0/ServiceStack.Redis.dll": {}
+          "lib/ServiceStack.OrmLite.SqlServer.dll": {},
+          "lib/ServiceStack.OrmLite.dll": {},
+          "lib/ServiceStack.Text.dll": {}
         }
       },
-      "ServiceStack.Text.Core/5.0.2": {
-        "dependencies": {
-          "Microsoft.CSharp": "4.4.0",
-          "Microsoft.Extensions.Primitives": "2.1.0-preview1-final",
-          "System.Runtime": "4.3.0"
-        },
+      "ServiceStack.Redis/3.0.0": {
         "runtime": {
-          "lib/netstandard2.0/ServiceStack.Text.dll": {}
+          "lib/ServiceStack.Redis.dll": {}
         },
         "compile": {
-          "lib/netstandard2.0/ServiceStack.Text.dll": {}
+          "lib/ServiceStack.Redis.dll": {}
         }
       },
+      "ServiceStack.Text/2.9.0": {},
       "SQLitePCLRaw.bundle_green/1.1.7": {
         "dependencies": {
           "SQLitePCLRaw.core": "1.1.7",
@@ -2695,7 +2682,7 @@
           "System.IO.FileSystem": "4.3.0",
           "System.Linq": "4.3.0",
           "System.Net.NameResolution": "4.3.0",
-          "System.Net.Security": "4.3.1",
+          "System.Net.Security": "4.3.0",
           "System.Net.Sockets": "4.3.0",
           "System.Reflection.Emit": "4.3.0",
           "System.Reflection.Emit.Lightweight": "4.3.0",
@@ -2805,18 +2792,6 @@
           "System.IO": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Text.Encoding": "4.3.0"
-        }
-      },
-      "System.Data.Common/4.3.0": {
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.IO": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Text.RegularExpressions": "4.3.0",
-          "System.Threading.Tasks": "4.3.0"
         }
       },
       "System.Data.SqlClient/4.4.0": {
@@ -3141,47 +3116,6 @@
           }
         }
       },
-      "System.Net.NetworkInformation/4.3.0": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "2.0.0",
-          "Microsoft.Win32.Primitives": "4.3.0",
-          "System.Collections": "4.3.0",
-          "System.Diagnostics.Tracing": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.IO": "4.3.0",
-          "System.IO.FileSystem": "4.3.0",
-          "System.IO.FileSystem.Primitives": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Net.Primitives": "4.3.0",
-          "System.Net.Sockets": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.Handles": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Security.Principal.Windows": "4.4.0",
-          "System.Threading": "4.3.0",
-          "System.Threading.Overlapped": "4.3.0",
-          "System.Threading.Tasks": "4.3.0",
-          "System.Threading.Thread": "4.3.0",
-          "System.Threading.ThreadPool": "4.3.0",
-          "runtime.native.System": "4.3.0"
-        },
-        "runtimeTargets": {
-          "runtime/linux/lib/_._": {
-            "rid": "linux",
-            "assetType": "runtime"
-          },
-          "runtime/osx/lib/_._": {
-            "rid": "osx",
-            "assetType": "runtime"
-          },
-          "runtime/win/lib/_._": {
-            "rid": "win",
-            "assetType": "runtime"
-          }
-        }
-      },
       "System.Net.Primitives/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.0.0",
@@ -3190,7 +3124,7 @@
           "System.Runtime.Handles": "4.3.0"
         }
       },
-      "System.Net.Security/4.3.1": {
+      "System.Net.Security/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.0.0",
           "Microsoft.Win32.Primitives": "4.3.0",
@@ -3760,24 +3694,6 @@
         "dependencies": {
           "System.Runtime": "4.3.0",
           "System.Threading.Tasks": "4.3.0"
-        }
-      },
-      "System.Threading.Overlapped/4.3.0": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "2.0.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Handles": "4.3.0"
-        },
-        "runtimeTargets": {
-          "runtime/unix/lib/_._": {
-            "rid": "unix",
-            "assetType": "runtime"
-          },
-          "runtime/win/lib/_._": {
-            "rid": "win",
-            "assetType": "runtime"
-          }
         }
       },
       "System.Threading.Tasks/4.3.0": {
@@ -5572,33 +5488,40 @@
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
       "runtimeStoreManifestName": "aspnetcore-store-2.0.0-win7-x86.xml"
     },
-    "ServiceStack.Common.Core/5.0.2": {
+    "ServiceStack/3.9.71": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-9WUsgYaclqQpD5BaG9ieCxR/4dIzGFJ62Jk8JjVciKE7eBFr8/Zk5YMzCISet5Um60I3bRpYPctUgO4H+YcBMw==",
-      "path": "servicestack.common.core/5.0.2",
-      "hashPath": "servicestack.common.core.5.0.2.nupkg.sha512"
+      "sha512": "sha512-G6shF+9Wc8yO32vpiLCXP9zl0F2d4pDxaNmtFl4QpQMUSPdD589DRWQm9xfg/k4g2K9ANjOAAecZcAFi9SsDNQ==",
+      "path": "servicestack/3.9.71",
+      "hashPath": "servicestack.3.9.71.nupkg.sha512"
     },
-    "ServiceStack.Interfaces.Core/5.0.2": {
+    "ServiceStack.Common/3.0.6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8NfkUmsCDbdmvyG+lbH0CuVCAWC36AwPcjjl5dIi0H+X/QiKCDGuaJONnYDqhpgrTVnrbdYzmVFRG1LtqtG4mA==",
-      "path": "servicestack.interfaces.core/5.0.2",
-      "hashPath": "servicestack.interfaces.core.5.0.2.nupkg.sha512"
+      "sha512": "sha512-BE06hInBMo4Rt68FdSvZKJjAIJJqa9VtbNFp6yi/7kM9BE0OjuWvwMwYYnTNbFUKN8ENwPOyU3dKIbxJcvTB6g==",
+      "path": "servicestack.common/3.0.6",
+      "hashPath": "servicestack.common.3.0.6.nupkg.sha512"
     },
-    "ServiceStack.Redis.Core/5.0.2": {
+    "ServiceStack.OrmLite.SqlServer/3.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-CchiQVXOKe1hktFw9hUKednPb6oaFUzHIsv3GcrTzNBGSYViLKQsknCLfnbqeU1lhtT8aFQTcISXzD04SA9e6A==",
-      "path": "servicestack.redis.core/5.0.2",
-      "hashPath": "servicestack.redis.core.5.0.2.nupkg.sha512"
+      "sha512": "sha512-CriNtl7pXs7YOJlZ08pBfS+LD7BDHW8DUbJLen8JM9HP3ThUMx29VfUVhdiikExErhF8BNkLBP5a30MgVveogQ==",
+      "path": "servicestack.ormlite.sqlserver/3.0.3",
+      "hashPath": "servicestack.ormlite.sqlserver.3.0.3.nupkg.sha512"
     },
-    "ServiceStack.Text.Core/5.0.2": {
+    "ServiceStack.Redis/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Yb6kviByFm5Xip4/0dBx1tqvZvUoZkf8OcPhBqasU+PuR2WEZp6csFsNQ714baj0oG0YgluSIP5SzRgW/oTLxg==",
-      "path": "servicestack.text.core/5.0.2",
-      "hashPath": "servicestack.text.core.5.0.2.nupkg.sha512"
+      "sha512": "sha512-z9H9ExLlnM58SwcbtulYjunjXQUZf7MVzysrBDaPkW9kGl9JfeMqG23CHKS3NA+fUnY6ztBFytMXAGWHnbeqvQ==",
+      "path": "servicestack.redis/3.0.0",
+      "hashPath": "servicestack.redis.3.0.0.nupkg.sha512"
+    },
+    "ServiceStack.Text/2.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Y2IaeTWQ4RHfwGIy8Qm5NJDHorwVJ9VlutC/QGr6i9aD9HqhYZegcc0BbPap/YvwL1X0GaIEzIwBi2bkIj0xig==",
+      "path": "servicestack.text/2.9.0",
+      "hashPath": "servicestack.text.2.9.0.nupkg.sha512"
     },
     "SQLitePCLRaw.bundle_green/1.1.7": {
       "type": "package",
@@ -5739,13 +5662,6 @@
       "sha512": "sha512-DHDrIxiqk1h03m6khKWV2X8p/uvN79rgSqpilL6uzpmSfxfU5ng8VcPtW4qsDsQDHiTv6IPV9TmD5M/vElPNLg==",
       "path": "system.console/4.3.0",
       "hashPath": "system.console.4.3.0.nupkg.sha512"
-    },
-    "System.Data.Common/4.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-lm6E3T5u7BOuEH0u18JpbJHxBfOJPuCyl4Kg1RH10ktYLp5uEEE1xKrHW56/We4SnZpGAuCc9N0MJpSDhTHZGQ==",
-      "path": "system.data.common/4.3.0",
-      "hashPath": "system.data.common.4.3.0.nupkg.sha512"
     },
     "System.Data.SqlClient/4.4.0": {
       "type": "package",
@@ -5911,13 +5827,6 @@
       "path": "system.net.nameresolution/4.3.0",
       "hashPath": "system.net.nameresolution.4.3.0.nupkg.sha512"
     },
-    "System.Net.NetworkInformation/4.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-zNVmWVry0pAu7lcrRBhwwU96WUdbsrGL3azyzsbXmVNptae1+Za+UgOe9Z6s8iaWhPn7/l4wQqhC56HZWq7tkg==",
-      "path": "system.net.networkinformation/4.3.0",
-      "hashPath": "system.net.networkinformation.4.3.0.nupkg.sha512"
-    },
     "System.Net.Primitives/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -5925,12 +5834,12 @@
       "path": "system.net.primitives/4.3.0",
       "hashPath": "system.net.primitives.4.3.0.nupkg.sha512"
     },
-    "System.Net.Security/4.3.1": {
+    "System.Net.Security/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-qYnDntmrrHXUAhA+v2Kve8onMjJ2ZryQvx7kjGhW88c0IgA9B+q2M8b3l76HFBeotufDbAJfOvLEP32PS4XIKA==",
-      "path": "system.net.security/4.3.1",
-      "hashPath": "system.net.security.4.3.1.nupkg.sha512"
+      "sha512": "sha512-IgJKNfALqw7JRWp5LMQ5SWHNKvXVz094U6wNE3c1i8bOkMQvgBL+MMQuNt3xl9Qg9iWpj3lFxPZEY6XHmROjMQ==",
+      "path": "system.net.security/4.3.0",
+      "hashPath": "system.net.security.4.3.0.nupkg.sha512"
     },
     "System.Net.Sockets/4.3.0": {
       "type": "package",
@@ -6229,13 +6138,6 @@
       "sha512": "sha512-VkUS0kOBcUf3Wwm0TSbrevDDZ6BlM+b/HRiapRFWjM5O0NS0LviG0glKmFK+hhPDd1XFeSdU1GmlLhb2CoVpIw==",
       "path": "system.threading/4.3.0",
       "hashPath": "system.threading.4.3.0.nupkg.sha512"
-    },
-    "System.Threading.Overlapped/4.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-m3HQ2dPiX/DSTpf+yJt8B0c+SRvzfqAJKx+QDWi+VLhz8svLT23MVjEOHPF/KiSLeArKU/iHescrbLd3yVgyNg==",
-      "path": "system.threading.overlapped/4.3.0",
-      "hashPath": "system.threading.overlapped.4.3.0.nupkg.sha512"
     },
     "System.Threading.Tasks/4.3.0": {
       "type": "package",
